@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入bootstrap样式文件 -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- 引入字体图标样式 -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!-- 引入首页样式文件 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./bootstrap/js/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <title>原神启动</title>
+    <style>
+        /* 设置整个网页字体为楷体 */
+        * {
+            font-family: 楷体;
+        }
+        /* 为宣传模块设置背景图 */
+        .box1 {
+            background: url(./images/bg1.jpg);
+        }
+        /* 为神明简介、玩家二创模块设置背景图 */
+        .box2 {
+            background: url(./images/bg2.jpg);
+        }
+        /* 为神明简介模块设置为弹性盒子 */
+        .box2 .container .box {
+            display: flex;
+        }
+        /* 为玩家二创模块分页器设置居中效果 */
+        .box3 {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-md navbar-light bg-secondary" style="background: url(./images/banner.jpg) no-repeat;">
+        <!-- Logo区域 -->
+        <h1 class="title">
+            <a class="navbar-brand" href="#">
+                <img src="./images/派蒙.jpg" alt="logo" width="50" height="50">
+            </a>
+        </h1>
+        <!-- 折叠按钮区域 -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <!-- 导航列表 -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">提瓦特</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">蒙德城</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">璃月港</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">稻妻城</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">须弥城</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">枫丹廷</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">纳塔</a></li>
+            </ul>
+            <!-- 搜索输入框和搜索按钮区域 -->
+            <form action="###" class="form-inline ml-auto">
+                <input type="text" class="form-control mr-sm-2" placeholder="最新资讯">
+                  <button class="btn btn-info my-2 my-sm-0" type="submit">搜  索
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- 原神宣传模块 -->
+    <div class="box1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4  col-12 col-sm-12">
+                    <ul>
+                         <li>
+                            <b>奇幻世界，等你探索</b>
+                            <ul class="list-unstyled">
+                                <li>
+                                        在提瓦特大陆，一个充满奇幻色彩的世界等待着你去探索。无论是神秘的遗迹、壮丽的自然风光，
+                              还是各具特色的城市与村落，每一处都隐藏着无数的秘密与惊喜。<hr>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>多元角色，伴你冒险</b>
+                            <ul class="list-unstyled">
+                                <li>
+                                        原神拥有众多性格鲜明、能力独特的角色。他们来自不同的国度和背景，有着自己的故事与梦想。
+                              与他们结伴同行，共同开启冒险之旅，在战斗与挑战中培养深厚的情谊。<hr>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>精彩剧情，沉浸体验</b>
+                            <ul class="list-unstyled">
+                                <li>
+                                        丰富而动人的剧情贯穿整个游戏。你将卷入各种势力的纷争，见证英雄的崛起与传奇的诞生，
+                                        深入了解这个世界的过去与未来。沉浸在剧情之中，感受喜怒哀乐，仿佛身临其境。<hr>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 宣传视频 -->
+                <div class="col-lg-4 col-12 col-sm-12">
+                    <h2 class="text-center">大世界探索</h2>
+                    <video controls autoplay muted width="350">
+                        <source src="./video/视频.mp4">
+                    </video>
+                </div>
+                <div class="col-lg-4  col-12 col-sm-12">
+                    <ul>
+                        <li>
+                            <b>元素之力，策略战斗</b>
+                            <ul class="list-unstyled">
+                                <li>
+                                        掌握七种元素之力，运用它们的特性进行战斗。不同元素之间相互作用，产生奇妙的化学反应。
+                              制定策略，巧妙搭配角色与元素，在战斗中发挥出最强的实力。<hr>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>开放世界，自由畅玩</b>
+                            <ul class="list-unstyled">
+                                <li>
+                                        广阔的开放世界任你自由驰骋。你可以攀爬高山、穿越森林、横渡江河，随心所欲地探索每一个角落。
+                            没有固定的路线，只有无尽的探索与发现。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>精美画面，视觉盛宴</b>
+                            <ul class="list-unstyled">
+                                <li>
+                                        游戏呈现出令人惊叹的精美画面。细腻的场景、逼真的光影、华丽的特效，
+                                        每一个画面都如同一幅艺术品，为你带来极致的视觉享受。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;<hr>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 神明简介模块 -->
+    <div class="box2">
+        <div class="container">
+            <h1 class="text-center">各国神明简介</h1> 
+            <div class="box shadow-sm my-2">
+                <img src="./images/per1.jpg" alt="温迪" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                <span><hr>温迪 神之心：风 命之座：歌仙座<br>
+                    是蒙德城的神明，他自由洒脱，喜欢喝酒，
+                    弹奏里拉琴，自称是七神中最古老的一位，也是仅有的神级吟游诗人。 
+                    <a href="#"><button class="btn btn-outline-secondary  float-right">>>更多</button></a>
+                    <hr></span>
+            </div>
+            <div class="box shadow-sm my-2">
+                <span><hr>钟离 神之心：岩 命之座：???  <a href="#"><button class="btn btn-outline-secondary">>>更多</button></a><br>
+                    是璃月港的神明，“岩王帝君”摩拉克斯在人间的化身。他知识渊博，
+                    见证了璃月的历史变迁，对璃月的文化、传统有着深刻的理解和传承。<hr>
+                </span>
+                <img src="./images/per2.jpg" alt="钟离" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+            </div>
+            <div class="box shadow-sm my-2">
+                <img src="./images/per3.jpg" alt="纳西妲" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                <span><hr>纳西妲 神之心：草 命之座：智慧主座<br> 
+                    是须弥地区的神明，被称为“小吉祥草王”。她虽然外表年幼，
+                    却拥有着无比智慧和强大的力量，一直守护着须弥的生灵和知识。
+                    <a href="#"><button class="btn btn-outline-secondary  float-right">>>更多</button></a>
+                    <hr></span>
+            </div>
+            <div class="box shadow-sm my-2">
+                <span><hr>雷电将军 神之心：雷 命之座：天下人座   <a href="#"><button class="btn btn-outline-secondary">>>更多</button></a><br>
+                    是稻妻的神明，拥有强大的雷霆之力。她不仅具备出色的领导才能，
+                    更在战斗中展现出惊人的实力，是原神中备受玩家喜爱的角色之一。<hr></span>
+               <img src="./images/per4.jpg" alt="雷电将军" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+            </div>
+            <div class="box shadow-sm my-2">
+                <img src="./images/per5.jpg" alt="芙宁娜" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                <span><hr>芙宁娜 命之座：水 命之座：司颂座<br>
+                    是枫丹的神明，以凡人之躯，比肩神明。在枫丹的传说中，
+                    她是一位充满神秘色彩的神祇，拥有着独特的力量和使命。
+                    <a href="#"><button class="btn btn-outline-secondary  float-right">>>更多</button></a>
+                    <hr></span>
+            </div>
+            <div class="box shadow-sm mt-2">
+                <span><hr>玛薇卡 神之心：火 命之座：不败阳焰座  <a href="#"><button class="btn btn-outline-secondary">>>更多</button></a><br>
+                    是纳塔的神明，她率领着纳塔战士们迎接了无数的战争，也夺得了无数场胜利，
+                    无论面对怎样的敌人，她的火焰从未暗淡过半分。<hr></span>
+                <img src="./images/per6.jpg" alt="玛薇卡" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <div id="carousel" class="carousel slide carousel-fade w-100" data-ride="carousel">
+        <!-- 指示器 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+            <li data-target="#carousel" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner" style="background: url(./images/bg2.jpg);">
+            <!-- 轮播图片 -->
+            <h1 class="text-center">版本速览</h1>
+            <div class="carousel-item active">
+                <img src="./images/banner1.jpg" class="mx-auto d-block w-100">
+                <div class="carousel-caption">
+                    <h2 style="color: black; font-size: small;">盛夏？海岛！大冒险！</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner2.jpg" class="mx-auto d-block w-100">
+                <div class="carousel-caption">
+                    <h2 style="font-size: small;">荒梦藏虞渊</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner3.jpg" class="mx-auto d-block w-100">
+                <div class="carousel-caption">
+                    <h2 style="color: black; font-size: small;">韶光抚月，天下人间</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner4.jpg" class="mx-auto d-block w-100">
+                <div class="carousel-caption">
+                    <h2 style="color: black; font-size: small;">千朵玫瑰带来的黎明</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner5.jpg" class="mx-auto d-block w-100">
+                <div class="carousel-caption">
+                    <h2 style="color: black; font-size: small;">仿若无因  飘落的轻雨</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner6.jpg" class="mx-auto d-block w-100">
+                <div class="carousel-caption">
+                    <h2 style="font-size: small;">荣花与炎日之途</h2>
+                </div>
+            </div>
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#carousel" data-slide="prev" >
+               <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" data-slide="next">
+               <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 玩家二创模块 -->
+    <div class="box2">
+        <div class="container text-center p-1">
+            <h1>玩家二创</h1>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                    <img src="./images/cha1.jpg" class="img-fluid rounded" alt="">
+                    <p class="text-muted d-none d-sm-block">作者·月间 <a href="#">+关注</a></p>
+                    <p>蓝蓝的两小只，喜欢！  赞(1021)</p>  
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <img src="./images/cha2.jpg" class="img-fluid rounded" alt="">
+                    <p class="text-muted d-none d-sm-block">作者·姜饼哒哒哒 <a href="#">+关注</a></p>
+                    <p>画了几只同款小摆件  赞(1760)</p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <img src="./images/cha3.jpg" class="img-fluid rounded" alt="">
+                    <p class="text-muted d-none d-sm-block">作者·-卷心菜-- <a href="#">+关注</a></p>
+                    <p>尊重孩子的兴趣  赞(5609)</p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <img src="./images/cha4.jpg" class="img-fluid rounded" alt="">
+                    <p class="text-muted d-none d-sm-block">作者·薏米橘 <a href="#">+关注</a></p>
+                    <p>极寒的利剑与冰封的玫瑰  赞(2726)</p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <img src="./images/cha5.jpg" class="img-fluid rounded" alt="">
+                    <p class="text-muted d-none d-sm-block">作者·慕雨冰 <a href="#">+关注</a></p>
+                    <p>get新的拍照方式~  赞(89)</p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <img src="./images/cha6.jpg" class="img-fluid rounded" alt="">
+                    <p class="text-muted d-none d-sm-block">作者·杀生为护生 <a href="#">+关注</a></p>
+                    <p>下过雨的午后  赞(1075)</p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <img src="./images/cha7.jpg" class="img-fluid rounded" alt="">
+                    <p class="text-muted d-none d-sm-block">作者·鸫吉咕咕咕 <a href="#">+关注</a></p>
+                    <p>呀---这个任务的钩锁到底是谁放的  赞(6219)</p>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <img src="./images/cha8.jpg" class="img-fluid rounded" alt="">
+                    <p class="text-muted d-none d-sm-block">作者·土豆吃啊 <a href="#">+关注</a></p>
+                    <p>【原神x瑞幸咖啡】原来逐的是这个鹿  赞(185)</p>
+                </div>
+            </div>
+            <!-- 分页器 -->
+            <div class="box3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>    
+        </div> 
+    </div>   
+
+    <!-- 个人信息模块 -->
+    <div class="box2">
+        <div class="container">
+            <img src="./images/原神.jpg" class="img-fluid  rounded mx-auto d-block" style="width: 130px; height: 80px;" alt="">
+            <h1 class="text-center">登录/注册</h1>
+            <h4 class="text-center text-muted">心动不如行动</h4>
+            <div class="row">              
+                <div class="col-md-6 col-sm-12">
+                    <img src="./images/miHoYo.jpg" class="img-fluid mx-auto d-block rounded" style="width: 200px; height: 60px;" alt="">
+                    <p class="text-center"><u>短信登录</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账号登录</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-perpend">
+                            <span class="input-group-text text-muted">+86</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="22013210170">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="计应三班 李世豪">
+                        <div class="input-group-perpend">
+                            <a href="#"><span class="input-group-text text-muted">获取验证码</span></a>
+                        </div>
+                    </div>
+                    <label class="form-checkbox-lable text-muted" for="box">
+                        <input class="form-checkbox-input" id="box" type="checkbox">
+                        已阅读并同意《米哈游用户协议》《米哈游隐私政策》,未注册的手机号验证通过将自动注册
+                    </label>
+                    <p class="text-center"><button class="btn btn-dark">登录</button></p>         
+                </div>
+                <div class="col-md-6 col-sm-12 d-none d-sm-block">
+                    <img src="./images/二维码.jpg" class="img-fluid mx-auto d-block mb-4" style="width: 400px; height: 400px;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- 合作伙伴和著作权声明模块 -->
+    <footer class="bg-dark p-1 text-light text-center">
+        <div class="container">
+            <h3>合作伙伴</h3>
+            <ul class="fa-ul">
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fa fa-weibo fa-2x text-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fa fa-reddit-alien fa-2x text-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fa fa-github-square fa-2x text-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fa fa-qq fa-2x text-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fa fa-wechat fa-2x text-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fa fa-arrow-down fa-2x text-white" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="m-2">用户协议 | 隐私政策 | 实名认证 | 关于我们 | 联系我们 | </p>
+            <p>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+        </div>
+    </footer>
+</body>
+</html>
